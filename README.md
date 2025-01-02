@@ -3,30 +3,27 @@ Modular Unstreamlined Starship Elements (MUSE)
 
 # The Flow
 
-The game is centered around action. As soon as you enter, there's a pirate to fight off, or a trader to trade with, or an alien to try to interact with. 
+This game is about exploring, trading, and surviving the Spinward Marches. As soon as you enter a star system, there's a pirate to fight off, or a trader to trade with, or an alien to try to interact with. 
 
-This could make for a fast-paced and dynamic experience. The player is always engaged, dealing with new situations as soon as they jump into a new system. It keeps things fresh and exciting. Each system could have a "theme" or "event pool" to draw from, so that even though the events are random, they fit the narrative vibe you're going for.
+Fast-paced and dynamic. The player is always engaged, dealing with new situations as soon as they jump into a new system. The event system keeps things fresh and exciting. Each system could have a "theme" or "event pool" to draw from, so that even though the events are random, they fit a narrative vibe.
 
 # The Storyboards
 
 ## Map View
-A simplified map view: the center is your current star, and then three or four tram lines extend out wards to your possible destination stars.  There’s no clutter, and no fuss: just your flight plan based on your next move.  The map view only shows your next move, not the whole map.  
+A simplified map view: the center is your current star, and then three or four tram lines extend outwards to your possible destination stars.  There’s no clutter, and no fuss: just your flight plan based on your next move.
 
-The Traveller map could give the player a broader sense of where they are in the universe. It's a strategic layer for planning, but not too much of a safety net, maintaining the uncertainty.
+As a step after resupply, it ties into the idea that, after all the action, the player takes a moment to plan and reconsider their next move. It feels very "in-character" for the journey itself, and it reinforces the feeling of being part of a larger, ongoing adventure.
 
-As a step after resupply, it could also tie into the idea that, after all the action, the player takes a moment to plan and reconsider their next move. It feels very "in-character" for the journey itself, and it reinforces the feeling of being part of a larger, ongoing adventure.
-
-
-* Each destination could display key information: distance, risk level, faction presence, or a vague hint about potential events (“Unstable Signals Detected” or “Frequent Trade Activity”).
+* Each destination displays key information: distance, risk level, faction presence, or a vague hint about potential events (“Unstable Signals Detected” or “Frequent Trade Activity”), e.g.:
 * A shield icon for patrol activity.
 * A skull icon for high-risk systems (pirates or separatists).
 * A glowing crate for trade opportunities.
 * A swirl for alien activity or anomalies.
 
 ## Travel View 
-In the second Storyboard, we have the travel view, which shows your ship in profile. Maybe you accelerate, maybe you just jump to your destination and that’s it.  
+This shows your ship in profile, arriving in system, or leaving it.
 
-You might have interactions in this view:
+You might have interactions:
 * Traders: Offer unique goods, trades, or questionable deals.
 * Scouts: Provide intel on nearby systems or warnings.
 * Aliens: Puzzles, communication challenges, or unexpected attacks.
@@ -44,38 +41,58 @@ This is key! The idea of docking with a station not just for repairs but for upg
 # Your Ship
 Your ship is highly modular, so you can swap parts and add new ones easily and visibly to your ship -- including adding a little fighter or lander to expand your capabilities a bit.  The ship is also pretty blocky, which means graphics don't have to be too svelte.
 
-This could really tie into the player's sense of ownership and agency over the journey. The ship's blocky design makes it easier to handle in terms of development, but also adds personality. It could become a central part of the game's narrative, where each new part added tells a story. The fighter/lander addition could make players feel like they’re preparing for a real adventure, with different gameplay elements based on their ship's configuration.
+This ties into the player's sense of ownership and agency over the journey. The ship's blocky design makes it easier to handle in terms of development, but also adds personality. It could become a central part of the game's narrative, where each new part added tells a story. The fighter/lander addition could make players feel like they’re preparing for a real adventure, with different gameplay elements based on their ship's configuration.
 
 ## Upgrades
 Modules can be added by (a) purchase at a starport, (b) purchase from a trader, (c) looting from a space hulk
 
 ## Core Modules
 
-### Bridge
-Command and control. The front of every starship.
+### Basic Bridge Plus
+* Minimal command and control.
+* Crew accommodations for 5.
+* The front of every starship.
+
+### Full Bridge
+* Command and control.
+* The front of every starship.
 Upgrades: Advanced navigation for map previews, enhanced sensors for diplomacy or scanning anomalies.
 
-### All-In-One Engines
-A combination of slow thrusters + small jump drive.
+### Engine Room No. 1
+* Small thrusters
+* Jump-1 and fuel
+* Life support for 5 people.
+* The rear of every starship.
+Upgrades: Faster recharge times, extended range.
+ 
+### Engine Room No. 2
+* Small thrusters
+* Jump-2 and fuel
+* The rear of every starship.
+Upgrades: Faster recharge times, extended range.
+
+### Long-Ranged Jump Drive
+* Jump-3 and fuel
+* The rear of every starship.
+Upgrades: Faster recharge times, extended range.
 
 ### Thrusters
-Determines speed and maneuverability. The rear of every starship.
+* Large thrusters
+* The rear of every starship.
 Upgrades: Higher thrust, energy efficiency, or silent running for stealth.
 
-### Jump Drive
-Enables system-to-system travel.
-Upgrades: Faster recharge times, extended range, or multi-jump capabilities.
-
 ### Life Support
-Sustains the crew and passengers.
+* Life support for 35 people.
+* Accommodates 5 passengers and 5 crew.
 Upgrades: Extended duration, alien-environment support, or improved efficiency.
 
 ### Cargo Pod
-Determines trade capacity.
+* Determines trade capacity.
 Add-ons: Smuggler’s compartments (hidden compartments for illicit goods).
 
-### Passenger Cabin
-Accommodates passengers.
+### Living Cabin
+* Accommodates 15 passengers and 10 crew.
+Variations: Different balance of passengers vs. crew.
 Upgrades: Luxury suites for high-paying passengers, cryo-pods for long-distance journeys.
 
 ## Add-On Enhancements
