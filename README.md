@@ -1,6 +1,39 @@
 # x16-traveller-muse
 Modular Unstreamlined Starship Elements (MUSE)
 
+# Top 7 Features for MUSE
+## 1. Ship Customization System (4K)
+Core module management: bridge, thrusters, and modular add-ons.
+Includes rules for placement, module stats, and visual representation.
+Vital for engaging the player in strategic planning and creative design.
+
+## 2. Event Generation System (4K)
+Randomized system events upon entering a star system: pirates, traders, aliens, or derelicts.
+Essential for creating replayability and keeping the game loop dynamic and exciting.
+
+## 3. Combat System (4K)
+Turn-based or real-time combat, including basic diplomacy (trading insults or negotiating before fighting).
+Adds tension and risk to exploration, requiring players to balance offense, defense, and ship upgrades.
+
+## 4. Docking and Resupply System (4K)
+Station interaction: refueling, repairs, upgrades, and trade.
+Central to the player’s progression and survival in the sandbox environment.
+
+## 5. Travel and Map System (4K)
+Includes the procedurally generated map, tram-line navigation, and hints about destination events.
+Provides a framework for exploration and decision-making.
+
+## 6. Reputation System (4K)
+Tracks player actions and consequences: diplomacy with factions, pirate behavior, and trade integrity.
+Influences interactions, such as hostile encounters or discounted trade rates, adding depth to the sandbox.
+
+## 7. Visual and Sound Effects System (4K)
+Simple graphics for ships, events, and stations.
+Retro sound effects for actions like docking, combat, and jumping.
+Enhances immersion and ties together the retro aesthetic.
+
+
+
 # The Flow
 
 This game is about exploring, trading, and surviving the Spinward Marches. As soon as you enter a star system, there's a pirate to fight off, or a trader to trade with, or an alien to try to interact with. 
