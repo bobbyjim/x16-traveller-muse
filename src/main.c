@@ -25,7 +25,7 @@ void init() {
 void main() {
 	init();
 	graphics_sayhello();
-	for(;;) {
+	//for(;;) {
 		// main loop code should go here
-	}
+	//}
 }

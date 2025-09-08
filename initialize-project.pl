@@ -1,3 +1,19 @@
+#
+#	initialize-project.pl
+#	2025 jan 06
+#	rje
+#
+#	INSTRUCTIONS: Place this in the root of your project directory.
+#
+#	Minimal setup for a cc65 project:
+#	* creates /src
+#   * creates /src/.obj
+#   * creates BOOT.BAS (which loads MAIN)
+#	* creates Makefile (which builds MAIN)
+#	* creates run (which calls ../../x16 emulator)
+#	* creates graphics.h and graphics.c wrapper files.
+#	* creates main.c with a stub init() and a main loop.
+#
 use strict;
 
 die "Project already created\n" if -e 'src/main.c' 
@@ -5,9 +21,7 @@ die "Project already created\n" if -e 'src/main.c'
              				    || -e 'src/Makefile' 
 								|| -e 'src/run'
 								|| -e 'src/graphics.c'
-								|| -e 'src/graphics.h'
-								|| -e 'src/sound.c'
-								|| -e 'src/sound.h';
+								|| -e 'src/graphics.h';
 
 mkdir 'src' or die "Cannot create \/src\n";
 chdir 'src';
@@ -39,6 +53,7 @@ sub createBootfile {
 999 LOAD "MAIN",8,1
 ENDBOOT
    close $fh;
+   print " - Created BOOT.BAS\n";
 }
 
 sub createRunscript {
@@ -48,9 +63,11 @@ sub createRunscript {
 ENDRUN
 	close $fh;
 	chmod 0755, 'run';
+	print " - Created run script and made it executable\n";
 }
 
 sub createMakefile {
+	#my $target = shift || 'MAIN';
 	open my $fh, '>', 'Makefile' or die "Cannot createMakefile: $!";
 	print $fh <<'ENDMAKEFILE';
 SOURCES = main.c graphics.c 
@@ -86,6 +103,7 @@ $(OBJECTS): $(OBJDIR)/%.o: %.c
 	$(CC) -c $(CFLAGS) -o $@ $<
 ENDMAKEFILE
 	close $fh;
+	print " - Created Makefile with a target of MAIN\n";
 }
 
 sub createMain {
@@ -118,12 +136,13 @@ void init() {
 void main() {
 	init();
 	graphics_sayhello();
-	for(;;) {
+	//for(;;) {
 		// main loop code should go here
-	}
+	//}
 }
 ENDMAIN
 	close $fh;
+	print " - Created main.c with stubbed out init() and run loop.\n";
 }
 
 sub createGraphics_H {
@@ -137,6 +156,7 @@ void graphics_sayhello();
 #endif
 ENDGRAPHICS_H
 	close $fh;
+	print " - Created graphics.h\n";
 }
 
 sub createGraphics_C {
@@ -164,4 +184,6 @@ void graphics_sayhello() {
 }
 
 ENDGRAPHICS_C
+	close $fh;
+	print " - Created graphics.c\n";
 }

@@ -2,48 +2,50 @@
 Modular Unstreamlined Starship Elements (MUSE)
 
 # Top 7 Features for MUSE
-* 1. Ship Customization System (4K)
+* 1. "Oregon Trail" Goal
 
-Core module management: bridge, thrusters, and modular add-ons.
-Includes rules for placement, module stats, and visual representation.
+The goal of the game is for the player to outfit his ship in the Galaxiad era
+to brave the long journey from Regina or Pretoria to Lobok or Vland -- and survive.
+This gives the framework of exploration and purpose to the game.
+Scoring depends on various factors in reaching the destination.
+
+* 2. Ship Customization System
+
+Core module management: bridge, thrusters, and modular add-ons.  The ship is a long
+chain of modules identified by byte indexes into a table of characteristics.  
+
 Vital for engaging the player in strategic planning and creative design.
 
-* 2. Event Generation System (4K)
+* 2. Event Generation System
 
 Randomized system events upon entering a star system: pirates, traders, aliens, or derelicts.
 Essential for creating replayability and keeping the game loop dynamic and exciting.
 
-* 3. Combat System (4K)
+* 3. Combat System
 
-Turn-based or real-time combat, including basic diplomacy (trading insults or negotiating before fighting).
+Narrative with basic diplomacy (trading insults or negotiating before fighting).
 Adds tension and risk to exploration, requiring players to balance offense, defense, and ship upgrades.
 
-* 4. Docking and Resupply System (4K)
+* 4. Docking and Resupply System
 
 Station interaction: refueling, repairs, upgrades, and trade.
-Central to the player’s progression and survival in the sandbox environment.
+Central to the player’s progression and survival.
 
-* 5. Travel and Map System (4K)
-
-Includes the procedurally generated map, tram-line navigation, and hints about destination events.
-Provides a framework for exploration and decision-making.
-
-* 6. Reputation System (4K)
+* 6. Reputation System
 
 Tracks player actions and consequences: diplomacy with factions, pirate behavior, and trade integrity.
 Influences interactions, such as hostile encounters or discounted trade rates, adding depth to the sandbox.
 
-* 7. Visual and Sound Effects System (4K)
+* 7. Visual and Sound Effects System
 
 Simple graphics for ships, events, and stations.
 Retro sound effects for actions like docking, combat, and jumping.
 Enhances immersion and ties together the retro aesthetic.
 
-
-
 # The Flow
 
-This game is about exploring, trading, and surviving the Spinward Marches. As soon as you enter a star system, there's a pirate to fight off, or a trader to trade with, or an alien to try to interact with. 
+This game is about traveling from a safe region of space, through the dangerous Wilds,
+to reach a far goal system, exploring, trading, and surviving as you go. As soon as you enter a star system, there's a pirate to fight off, or a trader to trade with, or an alien to try to interact with. 
 
 Fast-paced and dynamic. The player is always engaged, dealing with new situations as soon as they jump into a new system. The event system keeps things fresh and exciting. Each system could have a "theme" or "event pool" to draw from, so that even though the events are random, they fit a narrative vibe.
 
@@ -86,64 +88,141 @@ This ties into the player's sense of ownership and agency over the journey. The 
 ## Upgrades
 Modules can be added by (a) purchase at a starport, (b) purchase from a trader, (c) looting from a space hulk
 
-## Core Modules
+# Modules
 
-### Basic Bridge Plus
-* Minimal command and control.
-* Crew accommodations for 5.
-* The front of every starship.
+There are 32 basic modules. All modules are rated on:
 
-### Full Bridge
-* Command and control.
-* The front of every starship.
-Upgrades: Advanced navigation for map previews, enhanced sensors for diplomacy or scanning anomalies.
+* CC = Command and Control
+* CS  = Crew Stateroom
+* CPU = Computer
+* SEN = Sensor quality
+* PS  = Passenger Stateroom
+* LS  = Life Support
+* M   = Maneuver
+* J   = Jump
+* C   = Cargo
+* H   = Smuggler's Hatch
+* F   = Fighter
+* S   = Small craft (Cutter)
+* T   = Turret
+* D   = Defense
 
-### Engine Room No. 1
-* Small thrusters
-* Jump-1 and fuel
-* Life support for 5 people.
-* The rear of every starship.
-Upgrades: Faster recharge times, extended range.
- 
-### Engine Room No. 2
-* Small thrusters
-* Jump-2 and fuel
-* The rear of every starship.
-Upgrades: Faster recharge times, extended range.
+      ID  Type           Name               CC CPU SEN M J LS CS PS  C H F S T D
+      $01 Bridge         Basic Bridge Plus   1  1   1  - -  -  5  -  - - - - - 1
+      $02 Bridge         Full Bridge         3  2   2  - -  -  -  -  - - - - - 2
+      $04 Bridge         Command Bridge      5  5   5  - -  -  -  -  - - - - - 3
+      $05 Engine         Engine Room No. 1   -  -   -  1 1  5  -  -  - - - - - - 
+      $06 Engine         Engine Room No. 2   -  -   -  1 2  -  -  -  - - - - - - 
+      $07 Engine         Enhanced Jump       -  -   -  - 3  -  -  -  - - - - - - 
+      $08 Engine         Fast Maneuver       -  -   -  5 -  -  -  -  - - - - - - 
+      $09 Life Support   Life Support        -  -   -  - - 35  5  5  - - - - - -
+      $0a Life Support   Living Cabins       -  -   -  - -  - 10 15  - - - - - -
+	  $0b Life Support   Clinic              -  -   -  - -  -  -  -  - - - - - - 
+      $0c Cargo          Cargo Pod           -  -   -  - -  -  -  -  1 - - - - -
 
-### Long-Ranged Jump Drive
-* Jump-3 and fuel
-* The rear of every starship.
-Upgrades: Faster recharge times, extended range.
 
-### Thrusters
-* Large thrusters
-* The rear of every starship.
-Upgrades: Higher thrust, energy efficiency, or silent running for stealth.
-
-### Life Support
-* Life support for 35 people.
-* Accommodates 5 passengers and 5 crew.
-Upgrades: Extended duration, alien-environment support, or improved efficiency.
-
-### Cargo Pod
-* Determines trade capacity.
-Add-ons: Smuggler’s compartments (hidden compartments for illicit goods).
-
-### Living Cabin
-* Accommodates 15 passengers and 10 crew.
-Variations: Different balance of passengers vs. crew.
-Upgrades: Luxury suites for high-paying passengers, cryo-pods for long-distance journeys.
+* Bridge. Every starship must have one, and come at the front of every starship.
+* Engine. Every starship must have one, and come at the end of every starship.
+* Cargo Pod. Determines trade capacity.
 
 ## Add-On Enhancements
-Every core module has two slots for add-ons (above and below).
-Add-ons can be mixed and matched as needed.
+Every core module has one add-on slot. 
 
-* Screen
-* Turret
-* Fighter bracket
-* Cutter bracket
-* Small cargo pod
-* Sensor dish
-* Smuggler's compartment
+      ID  Type           Name               CC CPU SEN M J LS CS PS  C  H  F  S  T  D
+	  $01 Screen         Screen              -  -   -  - -  -  -  -  -  -  -  -  - +1
+	  $02 Weapon         Turret              -  -   -  - -  -  -  -  -  -  -  - +1  -
+	  $03 Fighter        Fighter Bracket     -  -   -  - -  -  -  -  -  - +1  -  -  -
+	  $04 Cutter         Cutter Bracket      -  -   -  - -  -  -  -  -  -  - +1  -  -
+	  $05 Cargo          Small Cargo Pod     -  -   -  - -  -  -  - +1  -  -  -  -  -
+	  $06 Cargo          Smuggler's Hatch    -  -   -  - -  -  -  -  - +1  -  -  -  -
+	  $07 Sensor         Sensor Antenna      -  -  +1  - -  -  -  -  -  -  -  -  -  -
 
+
+## Internal Structure
+
+     struct Module {
+         8 bits  : CoreModuleID      // base module type
+		 5 bits  : Manufacturer
+         3 bits  : Stage             // 
+         3 bits  : Range             // another numeric modifier (e.g., +5% sensor range)
+         3 bits  : Quality
+         3 bits  : Efficiency
+		 3 bits  : Reliability
+		 3 bits  : Ergonomics
+		 3 bits  : Safety
+     }
+
+## Manufacturer Database
+	struct ManufacturerData {
+		name : char[16];   // null terminated
+		quality
+		efficiency
+		reliability
+		ergonomics
+		safety
+	}
+
+## Module Database Record Structure
+
+	struct ModuleData {
+		type    : 4 or 5 bits
+			1 bridge / cpu / sensor
+			2 engineering : jump / manuever
+			3 life support / crew SR / pass SR
+			4 cargo / smuggler hatch
+			5 small craft : fighter / ship's boat
+			6 weapon : beam laser / pulse laser / missile launcher / sandcaster / PA barbette
+			7 defense : black globe / screens / dampers
+		subtype        : 3 bits (see items under type)
+		size           : 4 bits
+		primaryValue   : 4 bits
+		secondaryValue : 4 bits
+		tertiaryValue  : 4 bits
+	}
+
+# The Map
+
+The map is stored as sector-quadrants, four subsectors per quadrant.
+* q1: a, b, e, f
+* q2: c, d, g, h
+* q3: i, j, m, n 
+* q4: k, l, o, p
+
+These sectors are encoded:
+* SPIN - Spinward Marches
+* DENE - Deneb
+* CORR - Corridor
+* VLAN - Vland
+
+Thus there are 16 files, each with four subsectors.
+
+Each quadrant file has this header:
+
+   $000-$00f 	Sector full name, null padded.
+   $010         #0
+   $011         Quadrant number (0, 1, 2, 3)
+   $012-$013 	Quadrant base coordinates.
+   $014         Total system count. 255 is almost 80% capacity.
+   $015-$6b7    Quadrant metadata. 	
+   $6b8-$817 	System map.  0 = no system present.
+   $818-$2000   System Records.
+
+Quadrant Metadata. This is 1700 bytes of metadata for sundry purposes.
+
+System Map. This is a 320 byte offset index, one for every hex in the quadrant.  If 
+the index is 0, there is no system present.  Otherwise the system data is present at offset 32 x N, where N is the index from 1 to 255.
+
+System Records. Up to 255 entries of data at 24 bytes each (about 79% full).
+
+Each system record has a 24-byte structure:
+   $00-$0b  Mainworld name, z-compressed.
+   $0c-$0f  UWP, nybble-packed.
+   $10-$11  Codes: 
+   			2 bits: Bases, 
+			2 bits: Zone, 
+			1 bit: Belt presence, 
+			1 bit: GG presence, 
+			5 bits: Allegiance,
+			4 bits: Importance.
+   $12-$14  Remark flags: 24 remarks flags.
+   $15-$18  Reserved
