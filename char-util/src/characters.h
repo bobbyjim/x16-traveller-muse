@@ -2,16 +2,16 @@
 #define _CHARACTERS_H_
 
 typedef struct  {
-	unsigned id;
-	unsigned playerId; // if 0 then not assigned
+	long id;
+	long playerId; // if 0 then not assigned
 	char name[16];     // null terminated
 	char upp[7];       // null terminated
 	char sophont;      // sophont type (A=Aslan, M=Amindii, B=Bwap, D=Droyne, H=Human, V=Vargr, L=Llellewyloly,S=Shrieker)
 	char st;           // 'O'=OK 'W'=wounded 'S'=severely wounded 'C'=critical 'X'=dead 
 	char career;       // M=Merchant, S=Scout, A=Army, G=Agent, N=Navy, R=Rogue, I=Marines
-	char terms;        // number of terms served
-	char skillLevel[16];
-	int bestSkill; 	   // highest value skill
+	unsigned char terms;        // number of terms served
+	unsigned char bestSkill; 	   // highest value skill
+	unsigned char skillLevel[16];
 } CharacterStruct;
 
 void characters_generateRegistry();

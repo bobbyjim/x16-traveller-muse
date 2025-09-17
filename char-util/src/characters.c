@@ -73,7 +73,8 @@ void upp_generate(char *upp) {
 void characters_generateOneCharacterAt(int i) {
 	int skillCount;
 	int bestSkill = 0;
-	character_registry[i].id = rand();
+	long id = ((long)rand() << 15) | (long)rand();
+	character_registry[i].id = id;
 	name_generate(character_registry[i].name);
 	upp_generate(character_registry[i].upp);
 	character_registry[i].sophont = "ambdhhhhvls"[rand() % 6 + rand() % 6];
@@ -133,10 +134,11 @@ void showCharacterDetails(int index) {
 	printf("%d", salary);
 	gotoxy(0,23);
 	textcolor(COLOR_YELLOW);
-	printf("\n   (d)elete   (f)ire   (h)ire   (r)eturn? ");
+	printf("\n   (d)elete   (f)ire   (h)ire   (r)eturn   (s)ave? ");
 	for(;;) {
 		int c = cgetc();
 		if (c == 'r') return;
+		if (c == 's') characters_saveRegistry();
 	}
 }
 
@@ -181,21 +183,31 @@ void characters_loadRegistry() {
 
 void characters_saveRegistry()
 {
-	// code to generate character registry goes here
-	// FILE *fp = fopen("charreg.txt", "w");
-	// if (fp == NULL) {
-	// 	// handle error
-	// 	printf("error opening character registry for writing\n");
-	// 	return;
-	// }
-	// for (i = 0; i < 256; i++) {
-	// 	if (fprintf(fp, "%d - character description\n", i) < 0) {
-	// 		// handle error
-	// 		printf("error writing to character registry\n");
-	// 		fclose(fp);
-	// 		return;
-	// 	}
-	// }
-	// fclose(fp);
-	// printf("character registry generated successfully!\n");
+	int i;
+	FILE *fp = fopen("charreg.txt", "w");
+	if (fp == NULL) {
+		// handle error
+		printf("error opening character registry for writing\n");
+		return;
+	}
+	for(i=0; i<MAX_CHARACTERS; i++)
+	{	
+		int j;
+		fprintf(fp, "%8lx,%8lx,%15s,%s,%c,%c,%c,%d,%2d", 
+			character_registry[i].id, 
+			character_registry[i].playerId,
+			character_registry[i].name, 
+			character_registry[i].upp, 
+			character_registry[i].sophont, 
+			character_registry[i].st, 
+			character_registry[i].career,
+			character_registry[i].terms,
+			character_registry[i].bestSkill);
+		for(j=0; j<16; j++) {
+			fprintf(fp, ",%d", character_registry[i].skillLevel[j]);
+		}
+		fprintf(fp, "\n");
+	}
+	fclose(fp);
+	printf("character registry generated successfully!\n");
 }
