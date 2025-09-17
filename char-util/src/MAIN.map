@@ -1,0 +1,953 @@
+Modules list:
+-------------
+main.o:
+    CODE              Offs=000000  Size=00004C  Align=00001  Fill=0000
+    RODATA            Offs=000000  Size=000053  Align=00001  Fill=0000
+graphics.o:
+    CODE              Offs=00004C  Size=00000C  Align=00001  Fill=0000
+    RODATA            Offs=000053  Size=00000D  Align=00001  Fill=0000
+characters.o:
+    CODE              Offs=000058  Size=000821  Align=00001  Fill=0000
+    RODATA            Offs=000060  Size=000335  Align=00001  Fill=0000
+    BSS               Offs=000000  Size=0003D4  Align=00001  Fill=0000
+    DATA              Offs=000000  Size=000050  Align=00001  Fill=0000
+name.o:
+    CODE              Offs=000879  Size=000192  Align=00001  Fill=0000
+    RODATA            Offs=000395  Size=000241  Align=00001  Fill=0000
+    DATA              Offs=000050  Size=000002  Align=00001  Fill=0000
+splash.o:
+    CODE              Offs=000A0B  Size=000168  Align=00001  Fill=0000
+    RODATA            Offs=0005D6  Size=000507  Align=00001  Fill=0000
+    DATA              Offs=000052  Size=00002D  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(_cursor.o):
+    BSS               Offs=0003D4  Size=000001  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(_directerrno.o):
+    CODE              Offs=000B73  Size=000009  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(_file.o):
+    DATA              Offs=00007F  Size=00001E  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(_hextab.o):
+    RODATA            Offs=000ADD  Size=000010  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(_longminstr.o):
+    RODATA            Offs=000AED  Size=00000C  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(_mappederrno.o):
+    CODE              Offs=000B7C  Size=00000F  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(_oserror.o):
+    BSS               Offs=0003D5  Size=000001  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(_printf.o):
+    CODE              Offs=000B8B  Size=0003A1  Align=00001  Fill=0000
+    BSS               Offs=0003D6  Size=00002B  Align=00001  Fill=0000
+    DATA              Offs=00009D  Size=000003  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(_seterrno.o):
+    CODE              Offs=000F2C  Size=000009  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(_sys.o):
+    CODE              Offs=000F35  Size=000044  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(add.o):
+    CODE              Offs=000F79  Size=000018  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(addeqsp.o):
+    CODE              Offs=000F91  Size=000011  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(addysp.o):
+    CODE              Offs=000FA2  Size=00000E  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(aslax1.o):
+    CODE              Offs=000FB0  Size=000008  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(axlong.o):
+    CODE              Offs=000FB8  Size=00000D  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(c_bsout.o):
+/Volumes/Zort/git/cc65/lib/cx16.lib(callmain.o):
+    CODE              Offs=000FC5  Size=000017  Align=00001  Fill=0000
+    DATA              Offs=0000A0  Size=000004  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(cgetc.o):
+    CODE              Offs=000FDC  Size=000067  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(clrscr.o):
+    CODE              Offs=001043  Size=000011  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(color.o):
+    CODE              Offs=001054  Size=00002A  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(condes.o):
+    CODE              Offs=00107E  Size=00000C  Align=00001  Fill=0000
+    DATA              Offs=0000A4  Size=000025  Align=00001  Fill=0000
+    ONCE              Offs=000000  Size=00000C  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(cprintf.o):
+    CODE              Offs=00108A  Size=00002A  Align=00001  Fill=0000
+    BSS               Offs=000401  Size=000001  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(cputc.o):
+    CODE              Offs=0010B4  Size=000062  Align=00001  Fill=0000
+    RODATA            Offs=000AF9  Size=000008  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(cputs.o):
+    CODE              Offs=001116  Size=00001D  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(crt0.o):
+    STARTUP           Offs=000000  Size=000021  Align=00001  Fill=0000
+    ONCE              Offs=00000C  Size=00001B  Align=00001  Fill=0000
+    INIT              Offs=000000  Size=000002  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(ctype.o):
+    RODATA            Offs=000B01  Size=00008B  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(ctypemask.o):
+    CODE              Offs=001133  Size=00001E  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(decaxy.o):
+    CODE              Offs=001151  Size=000009  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(decsp2.o):
+    CODE              Offs=00115A  Size=00000D  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(decsp3.o):
+    CODE              Offs=001167  Size=00000D  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(decsp4.o):
+    CODE              Offs=001174  Size=00000D  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(decsp6.o):
+    CODE              Offs=001181  Size=00000D  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(errno.o):
+    BSS               Offs=000402  Size=000002  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(exehdr.o):
+    EXEHDR            Offs=000000  Size=00000C  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(filedes.o):
+    CODE              Offs=00118E  Size=00000E  Align=00001  Fill=0000
+    DATA              Offs=0000C9  Size=000010  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(fwrite.o):
+    CODE              Offs=00119C  Size=000077  Align=00001  Fill=0000
+    BSS               Offs=000404  Size=000002  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(gotoxy.o):
+    CODE              Offs=001213  Size=00000F  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(gotoy.o):
+    CODE              Offs=001222  Size=000006  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(icmp.o):
+    CODE              Offs=001228  Size=00002E  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(incax2.o):
+    CODE              Offs=001256  Size=000007  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(incax3.o):
+    CODE              Offs=00125D  Size=000005  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(incax6.o):
+    CODE              Offs=001262  Size=000005  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(incaxy.o):
+    CODE              Offs=001267  Size=00000B  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(incsp2.o):
+    CODE              Offs=001272  Size=000015  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(incsp3.o):
+    CODE              Offs=001287  Size=000005  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(incsp4.o):
+    CODE              Offs=00128C  Size=000005  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(incsp6.o):
+    CODE              Offs=001291  Size=000005  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(jmpvec.o):
+    DATA              Offs=0000D9  Size=000003  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(kbhit.o):
+    CODE              Offs=001296  Size=000005  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(kernal.o):
+/Volumes/Zort/git/cc65/lib/cx16.lib(ldaxi.o):
+    CODE              Offs=00129B  Size=00000D  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(ldaxsp.o):
+    CODE              Offs=0012A8  Size=000009  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(leaaxsp.o):
+    CODE              Offs=0012B1  Size=00000C  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(lneg.o):
+    CODE              Offs=0012BD  Size=00001E  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(loadaddr.o):
+    LOADADDR          Offs=000000  Size=000002  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(lpush.o):
+    CODE              Offs=0012DB  Size=00001E  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(ltoa.o):
+    CODE              Offs=0012F9  Size=000093  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(mod.o):
+    CODE              Offs=00138C  Size=000011  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(mul.o):
+    CODE              Offs=00139D  Size=000045  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(mul8.o):
+    CODE              Offs=0013E2  Size=00003A  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(mulax3.o):
+    CODE              Offs=00141C  Size=000011  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(negabs.o):
+    CODE              Offs=00142D  Size=000012  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(oserror.o):
+    CODE              Offs=00143F  Size=000016  Align=00001  Fill=0000
+    RODATA            Offs=000B8C  Size=00005A  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(popa.o):
+    CODE              Offs=001455  Size=00000A  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(popptr1.o):
+    CODE              Offs=00145F  Size=00000E  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(printf.o):
+    CODE              Offs=00146D  Size=000033  Align=00001  Fill=0000
+    BSS               Offs=000406  Size=000001  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(push1.o):
+    CODE              Offs=0014A0  Size=000005  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(pusha.o):
+    CODE              Offs=0014A5  Size=000016  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(pushax.o):
+    CODE              Offs=0014BB  Size=00001A  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(pushw.o):
+    CODE              Offs=0014D5  Size=00000F  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(pushwsp.o):
+    CODE              Offs=0014E4  Size=00001C  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(rand.o):
+    CODE              Offs=001500  Size=000034  Align=00001  Fill=0000
+    DATA              Offs=0000DC  Size=000004  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(randomize.o):
+    CODE              Offs=001534  Size=000006  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(rwcommon.o):
+    CODE              Offs=00153A  Size=00001A  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(shelp.o):
+    CODE              Offs=001554  Size=000020  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(shrax1.o):
+    CODE              Offs=001574  Size=000008  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(staspidx.o):
+    CODE              Offs=00157C  Size=000016  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(staxsp.o):
+    CODE              Offs=001592  Size=00000B  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(staxspi.o):
+    CODE              Offs=00159D  Size=00001A  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(strcpy.o):
+    CODE              Offs=0015B7  Size=00001F  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(strlen.o):
+    CODE              Offs=0015D6  Size=000016  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(strlower.o):
+    CODE              Offs=0015EC  Size=000027  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(strncpy.o):
+    CODE              Offs=001613  Size=000042  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(sub.o):
+    CODE              Offs=001655  Size=000014  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(subeqsp.o):
+    CODE              Offs=001669  Size=000015  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(subysp.o):
+    CODE              Offs=00167E  Size=00000D  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(udiv.o):
+    CODE              Offs=00168B  Size=00004F  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(vcprintf.o):
+    CODE              Offs=0016DA  Size=000074  Align=00001  Fill=0000
+    DATA              Offs=0000E0  Size=000008  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(vfprintf.o):
+    CODE              Offs=00174E  Size=000060  Align=00001  Fill=0000
+    DATA              Offs=0000E8  Size=000008  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(videomode.o):
+    CODE              Offs=0017AE  Size=000014  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(write.o):
+    CODE              Offs=0017C2  Size=000052  Align=00001  Fill=0000
+    ONCE              Offs=000027  Size=000011  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(zerobss.o):
+    CODE              Offs=001814  Size=000023  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(zeropage.o):
+    ZEROPAGE          Offs=000000  Size=00001A  Align=00001  Fill=0000
+
+
+Segment list:
+-------------
+Name                   Start     End    Size  Align
+----------------------------------------------------
+ZEROPAGE              000022  00003B  00001A  00001
+LOADADDR              0007FF  000800  000002  00001
+EXEHDR                000801  00080C  00000C  00001
+STARTUP               00080D  00082D  000021  00001
+CODE                  00082E  002064  001837  00001
+RODATA                002065  002C4A  000BE6  00001
+DATA                  002C4B  002D3A  0000F0  00001
+INIT                  002D3B  002D3C  000002  00001
+BSS                   002D3D  003143  000407  00001
+ONCE                  002D3D  002D76  00003A  00001
+
+
+Exports list by name:
+---------------------
+BSOUT                     00FFD2 RLA    CHROUT                    00FFD2 RLA    
+CKOUT                     00FFC9 RLA    CLRCH                     00FFCC RLA    
+ENTROPY_GET               00FECF RLA    GETIN                     00FFE4 RLA    
+KBDBUF_PEEK               00FEBD RLA    OPEN                      00FFC0 RLA    
+PLOT                      00FFF0 RLA    READST                    00FFB7 RLA    
+SCREEN_MODE               00FF5F RLA    SETLFS                    00FFBA RLA    
+__BSS_RUN__               002D3D RLA    __BSS_SIZE__              000407 REA    
+__CONSTRUCTOR_COUNT__     000001 REA    __CONSTRUCTOR_TABLE__     002D75 RLA    
+__DESTRUCTOR_COUNT__      000000 REA    __DESTRUCTOR_TABLE__      002C4B RLA    
+__EXEHDR__                000001 REA    __HEADER_LAST__           00080D RLA    
+__HIMEM__                 009F00 REA    __LOADADDR__              000001 REA    
+__MAIN_SIZE__             0096F3 REA    __MAIN_START__            00080D RLA    
+__ONCE_RUN__              002D3D RLA    __STACKSIZE__             000800 REA    
+__STARTUP__               000001 REA    ___directerrno            0013A1 RLA    
+___errno                  00313F RLA    ___mappederrno            0013AA RLA    
+___oserror                003112 RLA    ___osmaperrno             001C6D RLA    
+___randomize              001D62 RLA    ___seterrno               00175A RLA    
+__ctype                   002B66 RLA    __ctypeidx                002B71 RLA    
+__hextab                  002B42 RLA    __longminstr              002B52 RLA    
+__printf                  0014AA RLA    __sys                     001763 RLA    
+_bgcolor                  001895 RLA    _cbm_k_bsout              00FFD2 RLA    
+_cgetc                    00180A RLA    _characters_loadRegistry  000A0A RLA    
+_characters_showRegistry  0008AF RLA    _clrscr                   001871 RLA    
+_cprintf                  0018B8 RLA    _cputc                    0018E7 RLA    
+_cputs                    00194D RLA    _cputsxy                  001944 RLA    
+_fwrite                   0019CA RLA    _gotoxy                   001A44 RLA    
+_gotoy                    001A50 RLA    _kbhit                    001AC4 RLA    
+_login                    001239 RLA    _ltoa                     001B3F RLA    
+_main                     00084E RLA    _name_generate            0010A7 RLA    
+_printf                   001C9B RLA    _rand                     001D3A RLA    
+_srand                    001D2E RLA    _stdout                   002CE4 RLA    
+_strcpy                   001DE5 RLA    _strlen                   001E04 RLA    
+_strlower                 001E1A RLA    _strncpy                  001E41 RLA    
+_textcolor                001882 RLA    _ultoa                    001B7E RLA    
+_vcprintf                 001F4C RLA    _vfprintf                 001FB3 RLA    
+_videomode                001FDC RLA    _write                    001FF0 RLA    
+addeq0sp                  0017BF RLA    addeqysp                  0017C1 RLA    
+addysp                    0017D1 RLA    addysp1                   0017D0 RLA    
+aslax1                    0017DE RLA    axlong                    0017E6 RLA    
+axulong                   0017EC RLA    callmain                  0017F3 RLA    
+ctypemaskdirect           001965 RLA    cursor                    003111 RLA    
+decaxy                    00197F RLA    decsp2                    001988 RLA    
+decsp3                    001995 RLA    decsp4                    0019A2 RLA    
+decsp6                    0019AF RLA    donelib                   0018AC RLA    
+fdtab                     002D14 RLA    gotoxy                    001A41 RLA    
+incax2                    001A84 RLA    incax3                    001A8B RLA    
+incax4                    001A95 RLA    incax6                    001A90 RLA    
+incaxy                    001A97 RLA    incsp2                    001AA7 RLA    
+incsp3                    001AB5 RLA    incsp4                    001ABA RLA    
+incsp6                    001ABF RLA    initlib                   002D3D RLA    
+initstdout                002D64  LAI   jmpvec                    002D24 RLA    
+ldax0sp                   001AD6 RLA    ldaxi                     001AC9 RLA    
+ldaxidx                   001ACB RLA    ldaxysp                   001AD8 RLA    
+leaa0sp                   001ADF RLA    mul8x16                   001C12 RLA    
+mul8x16a                  001C1C RLA    mulax3                    001C4A RLA    
+negax                     001C5F RLA    negeax                    001AEB RLA    
+plot                      001913 RLA    popa                      001C83 RLA    
+popax                     001AA0 RLA    popptr1                   001C8D RLA    
+popsargsudiv16            001D82 RLA    ptr1                      00002A RLZ    
+ptr2                      00002C RLZ    ptr3                      00002E RLZ    
+ptr4                      000030 RLZ    push0                     001CE9 RLA    
+push1                     001CCE RLA    pusha                     001CD7 RLA    
+pusha0                    001CEB RLA    pushax                    001CED RLA    
+pusheax                   001B10 RLA    pushw                     001D03 RLA    
+pushwysp                  001D14 RLA    regbank                   000036 RLZ    
+rwcommon                  001D68 RLA    shrax1                    001DA2 RLA    
+sp                        000022 RLZ    sreg                      000024 RLZ    
+staspidx                  001DAA RLA    stax0sp                   001DC0 RLA    
+staxspidx                 001DCB RLA    staxysp                   001DC2 RLA    
+subeq0sp                  001E97 RLA    subeqysp                  001E99 RLA    
+subysp                    001EAC RLA    tmp1                      000032 RLZ    
+tmp2                      000033 RLZ    tmp3                      000034 RLZ    
+tosaddax                  0017A9 RLA    tosicmp0                  001A56 RLA    
+tosmoda0                  001BBA RLA    tosmula0                  001C10 RLA    
+tossubax                  001E85 RLA    tosudivax                 001EBB RLA    
+tosumula0                 001C10 RLA    tosumulax                 001BCB RLA    
+udiv16                    001ECA RLA    zerobss                   002042 RLA    
+
+
+
+Exports list by value:
+----------------------
+__DESTRUCTOR_COUNT__      000000 REA    __EXEHDR__                000001 REA    
+__STARTUP__               000001 REA    __LOADADDR__              000001 REA    
+__CONSTRUCTOR_COUNT__     000001 REA    sp                        000022 RLZ    
+sreg                      000024 RLZ    ptr1                      00002A RLZ    
+ptr2                      00002C RLZ    ptr3                      00002E RLZ    
+ptr4                      000030 RLZ    tmp1                      000032 RLZ    
+tmp2                      000033 RLZ    tmp3                      000034 RLZ    
+regbank                   000036 RLZ    __BSS_SIZE__              000407 REA    
+__STACKSIZE__             000800 REA    __MAIN_START__            00080D RLA    
+__HEADER_LAST__           00080D RLA    _main                     00084E RLA    
+_characters_showRegistry  0008AF RLA    _characters_loadRegistry  000A0A RLA    
+_name_generate            0010A7 RLA    _login                    001239 RLA    
+___directerrno            0013A1 RLA    ___mappederrno            0013AA RLA    
+__printf                  0014AA RLA    ___seterrno               00175A RLA    
+__sys                     001763 RLA    tosaddax                  0017A9 RLA    
+addeq0sp                  0017BF RLA    addeqysp                  0017C1 RLA    
+addysp1                   0017D0 RLA    addysp                    0017D1 RLA    
+aslax1                    0017DE RLA    axlong                    0017E6 RLA    
+axulong                   0017EC RLA    callmain                  0017F3 RLA    
+_cgetc                    00180A RLA    _clrscr                   001871 RLA    
+_textcolor                001882 RLA    _bgcolor                  001895 RLA    
+donelib                   0018AC RLA    _cprintf                  0018B8 RLA    
+_cputc                    0018E7 RLA    plot                      001913 RLA    
+_cputsxy                  001944 RLA    _cputs                    00194D RLA    
+ctypemaskdirect           001965 RLA    decaxy                    00197F RLA    
+decsp2                    001988 RLA    decsp3                    001995 RLA    
+decsp4                    0019A2 RLA    decsp6                    0019AF RLA    
+_fwrite                   0019CA RLA    gotoxy                    001A41 RLA    
+_gotoxy                   001A44 RLA    _gotoy                    001A50 RLA    
+tosicmp0                  001A56 RLA    incax2                    001A84 RLA    
+incax3                    001A8B RLA    incax6                    001A90 RLA    
+incax4                    001A95 RLA    incaxy                    001A97 RLA    
+popax                     001AA0 RLA    incsp2                    001AA7 RLA    
+incsp3                    001AB5 RLA    incsp4                    001ABA RLA    
+incsp6                    001ABF RLA    _kbhit                    001AC4 RLA    
+ldaxi                     001AC9 RLA    ldaxidx                   001ACB RLA    
+ldax0sp                   001AD6 RLA    ldaxysp                   001AD8 RLA    
+leaa0sp                   001ADF RLA    negeax                    001AEB RLA    
+pusheax                   001B10 RLA    _ltoa                     001B3F RLA    
+_ultoa                    001B7E RLA    tosmoda0                  001BBA RLA    
+tosumulax                 001BCB RLA    tosmula0                  001C10 RLA    
+tosumula0                 001C10 RLA    mul8x16                   001C12 RLA    
+mul8x16a                  001C1C RLA    mulax3                    001C4A RLA    
+negax                     001C5F RLA    ___osmaperrno             001C6D RLA    
+popa                      001C83 RLA    popptr1                   001C8D RLA    
+_printf                   001C9B RLA    push1                     001CCE RLA    
+pusha                     001CD7 RLA    push0                     001CE9 RLA    
+pusha0                    001CEB RLA    pushax                    001CED RLA    
+pushw                     001D03 RLA    pushwysp                  001D14 RLA    
+_srand                    001D2E RLA    _rand                     001D3A RLA    
+___randomize              001D62 RLA    rwcommon                  001D68 RLA    
+popsargsudiv16            001D82 RLA    shrax1                    001DA2 RLA    
+staspidx                  001DAA RLA    stax0sp                   001DC0 RLA    
+staxysp                   001DC2 RLA    staxspidx                 001DCB RLA    
+_strcpy                   001DE5 RLA    _strlen                   001E04 RLA    
+_strlower                 001E1A RLA    _strncpy                  001E41 RLA    
+tossubax                  001E85 RLA    subeq0sp                  001E97 RLA    
+subeqysp                  001E99 RLA    subysp                    001EAC RLA    
+tosudivax                 001EBB RLA    udiv16                    001ECA RLA    
+_vcprintf                 001F4C RLA    _vfprintf                 001FB3 RLA    
+_videomode                001FDC RLA    _write                    001FF0 RLA    
+zerobss                   002042 RLA    __hextab                  002B42 RLA    
+__longminstr              002B52 RLA    __ctype                   002B66 RLA    
+__ctypeidx                002B71 RLA    __DESTRUCTOR_TABLE__      002C4B RLA    
+_stdout                   002CE4 RLA    fdtab                     002D14 RLA    
+jmpvec                    002D24 RLA    initlib                   002D3D RLA    
+__ONCE_RUN__              002D3D RLA    __BSS_RUN__               002D3D RLA    
+initstdout                002D64  LAI   __CONSTRUCTOR_TABLE__     002D75 RLA    
+cursor                    003111 RLA    ___oserror                003112 RLA    
+___errno                  00313F RLA    __MAIN_SIZE__             0096F3 REA    
+__HIMEM__                 009F00 REA    KBDBUF_PEEK               00FEBD RLA    
+ENTROPY_GET               00FECF RLA    SCREEN_MODE               00FF5F RLA    
+READST                    00FFB7 RLA    SETLFS                    00FFBA RLA    
+OPEN                      00FFC0 RLA    CKOUT                     00FFC9 RLA    
+CLRCH                     00FFCC RLA    _cbm_k_bsout              00FFD2 RLA    
+CHROUT                    00FFD2 RLA    BSOUT                     00FFD2 RLA    
+GETIN                     00FFE4 RLA    PLOT                      00FFF0 RLA    
+
+
+
+Imports list:
+-------------
+BSOUT (kernal.o):
+    write.o                   cbm/cbm.inc:49
+    c_bsout.o                 cbm/cbm.inc:49
+CHROUT (kernal.o):
+    crt0.o                    cx16/crt0.s:10
+    clrscr.o                  cx16/clrscr.s:10
+    c_bsout.o                 cbm/cbm.inc:50
+CKOUT (kernal.o):
+    write.o                   cbm/cbm.inc:45
+CLRCH (kernal.o):
+    write.o                   cbm/cbm.inc:46
+ENTROPY_GET (kernal.o):
+    randomize.o               cx16/randomize.s:10
+GETIN (kernal.o):
+    cgetc.o                   cx16/cgetc.s:10
+KBDBUF_PEEK (kernal.o):
+    kbhit.o                   cx16/kbhit.s:10
+OPEN (kernal.o):
+    write.o                   cbm/cbm.inc:35
+PLOT (kernal.o):
+    cputc.o                   cx16/cputc.s:11
+READST (kernal.o):
+    write.o                   cbm/cbm.inc:32
+SCREEN_MODE (kernal.o):
+    videomode.o               cx16/videomode.s:24
+SETLFS (kernal.o):
+    write.o                   cbm/cbm.inc:33
+__BSS_RUN__ ([linker generated]):
+    zerobss.o                 common/zerobss.s:8
+__BSS_SIZE__ ([linker generated]):
+    zerobss.o                 common/zerobss.s:8
+__CONSTRUCTOR_COUNT__ ([linker generated]):
+    condes.o                  runtime/condes.s:18
+__CONSTRUCTOR_TABLE__ ([linker generated]):
+    condes.o                  runtime/condes.s:18
+__DESTRUCTOR_COUNT__ ([linker generated]):
+    condes.o                  runtime/condes.s:19
+__DESTRUCTOR_TABLE__ ([linker generated]):
+    condes.o                  runtime/condes.s:19
+__EXEHDR__ (exehdr.o):
+    [linker generated]        /Volumes/Zort/git/cc65/cfg/cx16.cfg:6
+__HEADER_LAST__ ([linker generated]):
+    [linker generated]        /Volumes/Zort/git/cc65/cfg/cx16.cfg:14
+    [linker generated]        /Volumes/Zort/git/cc65/cfg/cx16.cfg:14
+__HIMEM__ ([linker generated]):
+    [linker generated]        /Volumes/Zort/git/cc65/cfg/cx16.cfg:15
+    [linker generated]        /Volumes/Zort/git/cc65/cfg/cx16.cfg:14
+__LOADADDR__ (loadaddr.o):
+    [linker generated]        /Volumes/Zort/git/cc65/cfg/cx16.cfg:5
+__MAIN_SIZE__ ([linker generated]):
+    crt0.o                    cx16/crt0.s:11
+__MAIN_START__ ([linker generated]):
+    crt0.o                    cx16/crt0.s:11
+__ONCE_RUN__ ([linker generated]):
+    [linker generated]        /Volumes/Zort/git/cc65/cfg/cx16.cfg:15
+    [linker generated]        /Volumes/Zort/git/cc65/cfg/cx16.cfg:15
+__STACKSIZE__ ([linker generated]):
+    [linker generated]        /Volumes/Zort/git/cc65/cfg/cx16.cfg:15
+__STARTUP__ (crt0.o):
+    main.o                    main.s:13
+___directerrno (_directerrno.o):
+    write.o                   /Volumes/Zort/git/cc65/asminc/errno.inc:10
+___errno (errno.o):
+    _seterrno.o               /Volumes/Zort/git/cc65/asminc/errno.inc:7
+___mappederrno (_mappederrno.o):
+    write.o                   /Volumes/Zort/git/cc65/asminc/errno.inc:10
+___oserror (_oserror.o):
+    _mappederrno.o            /Volumes/Zort/git/cc65/asminc/errno.inc:7
+    _directerrno.o            /Volumes/Zort/git/cc65/asminc/errno.inc:7
+    write.o                   /Volumes/Zort/git/cc65/asminc/errno.inc:7
+___osmaperrno (oserror.o):
+    _mappederrno.o            /Volumes/Zort/git/cc65/asminc/errno.inc:8
+___randomize (randomize.o):
+    main.o                    main.s:15
+___seterrno (_seterrno.o):
+    _mappederrno.o            /Volumes/Zort/git/cc65/asminc/errno.inc:9
+    _directerrno.o            /Volumes/Zort/git/cc65/asminc/errno.inc:9
+    fwrite.o                  /Volumes/Zort/git/cc65/asminc/errno.inc:9
+__ctype (ctype.o):
+    ctypemask.o               common/ctypemask.s:23
+__ctypeidx (ctype.o):
+    ctypemask.o               common/ctypemask.s:24
+__hextab (_hextab.o):
+    ltoa.o                    common/ltoa.s:10
+__longminstr (_longminstr.o):
+    ltoa.o                    common/ltoa.s:10
+__printf (_printf.o):
+    vfprintf.o                common/vfprintf.s:10
+    vcprintf.o                conio/vcprintf.s:9
+__sys (_sys.o):
+    main.o                    main.s:14
+_bgcolor (color.o):
+    splash.o                  splash.s:21
+    characters.o              characters.s:20
+_cbm_k_bsout (c_bsout.o):
+    splash.o                  splash.s:13
+_cgetc (cgetc.o):
+    characters.o              characters.s:18
+    main.o                    main.s:17
+_characters_loadRegistry (characters.o):
+    main.o                    main.s:20
+_characters_showRegistry (characters.o):
+    main.o                    main.s:19
+_clrscr (clrscr.o):
+    splash.o                  splash.s:14
+    characters.o              characters.s:16
+    main.o                    main.s:16
+_cprintf (cprintf.o):
+    splash.o                  splash.s:19
+    graphics.o                graphics.s:14
+_cputc (cputc.o):
+    vcprintf.o                conio/vcprintf.s:9
+    cputs.o                   conio/cputs.s:9
+_cputs (cputs.o):
+    splash.o                  splash.s:17
+_cputsxy (cputs.o):
+    splash.o                  splash.s:18
+_fwrite (fwrite.o):
+    vfprintf.o                common/vfprintf.s:10
+_gotoxy (gotoxy.o):
+    splash.o                  splash.s:16
+    characters.o              characters.s:17
+_gotoy (gotoy.o):
+    splash.o                  splash.s:15
+_kbhit (kbhit.o):
+    cgetc.o                   cx16/cgetc.s:10
+_login (splash.o):
+    main.o                    main.s:21
+_ltoa (ltoa.o):
+    _printf.o                 common/_printf.s:12
+_main (main.o):
+    callmain.o                runtime/callmain.s:11
+_name_generate (name.o):
+    characters.o              characters.s:21
+_printf (printf.o):
+    characters.o              characters.s:13
+    main.o                    main.s:18
+_rand (rand.o):
+    name.o                    name.s:13
+    characters.o              characters.s:14
+_srand (rand.o):
+    randomize.o               cx16/randomize.s:10
+_stdout (_file.o):
+    printf.o                  common/printf.s:8
+_strcpy (strcpy.o):
+    name.o                    name.s:14
+_strlen (strlen.o):
+    _printf.o                 common/_printf.s:13
+    splash.o                  splash.s:22
+    name.o                    name.s:15
+_strlower (strlower.o):
+    _printf.o                 common/_printf.s:13
+_strncpy (strncpy.o):
+    name.o                    name.s:16
+_textcolor (color.o):
+    splash.o                  splash.s:20
+    characters.o              characters.s:19
+_ultoa (ltoa.o):
+    _printf.o                 common/_printf.s:12
+_vcprintf (vcprintf.o):
+    cprintf.o                 conio/cprintf.s:8
+_vfprintf (vfprintf.o):
+    printf.o                  common/printf.s:8
+_videomode (videomode.o):
+    characters.o              characters.s:15
+_write (write.o):
+    fwrite.o                  common/fwrite.s:10
+addeq0sp (addeqsp.o):
+    splash.o                  splash.s:397
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+addeqysp (addeqsp.o):
+    name.o                    name.s:260
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+addysp (addysp.o):
+    fwrite.o                  common/fwrite.s:11
+    printf.o                  common/printf.s:8
+    incsp6.o                  runtime/incsp6.s:8
+    incsp4.o                  runtime/incsp4.s:8
+    incsp3.o                  runtime/incsp3.s:8
+    cprintf.o                 conio/cprintf.s:8
+    name.o                    name.s:260
+addysp1 (addysp.o):
+    sub.o                     runtime/sub.s:8
+aslax1 (aslax1.o):
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+axlong (axlong.o):
+    _printf.o                 common/_printf.s:11
+axulong (axlong.o):
+    _printf.o                 common/_printf.s:11
+callmain (callmain.o):
+    crt0.o                    cx16/crt0.s:9
+ctypemaskdirect (ctypemask.o):
+    strlower.o                common/strlower.s:14
+cursor (_cursor.o):
+    cgetc.o                   cx16/cgetc.s:10
+decaxy (decaxy.o):
+    characters.o              characters.s:1343
+decsp2 (decsp2.o):
+    splash.o                  splash.s:397
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+decsp3 (decsp3.o):
+    characters.o              characters.s:1343
+decsp4 (decsp4.o):
+    lpush.o                   runtime/lpush.s:12
+decsp6 (decsp6.o):
+    _printf.o                 common/_printf.s:11
+    main.o                    main.s:107
+donelib (condes.o):
+    crt0.o                    cx16/crt0.s:8
+fdtab (filedes.o):
+    write.o                   cbm/filedes.inc:7
+gotoxy (gotoxy.o):
+    cputc.o                   cx16/cputc.s:11
+    cputs.o                   conio/cputs.s:9
+incax2 (incax2.o):
+    name.o                    name.s:260
+incax3 (incax3.o):
+    name.o                    name.s:260
+incax4 (incaxy.o):
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+incax6 (incax6.o):
+    characters.o              characters.s:1343
+incaxy (incaxy.o):
+    incax6.o                  runtime/incax6.s:8
+    incax3.o                  runtime/incax3.s:8
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+incsp2 (incsp2.o):
+    staxspi.o                 runtime/staxspi.s:9
+    staspidx.o                runtime/staspidx.s:8
+    popptr1.o                 runtime/popptr1.s:8
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+incsp3 (incsp3.o):
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+incsp4 (incsp4.o):
+    splash.o                  splash.s:397
+incsp6 (incsp6.o):
+    fwrite.o                  common/fwrite.s:11
+    vfprintf.o                common/vfprintf.s:9
+    splash.o                  splash.s:397
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    main.o                    main.s:107
+initlib (condes.o):
+    crt0.o                    cx16/crt0.s:8
+jmpvec (jmpvec.o):
+    _sys.o                    common/_sys.s:8
+ldax0sp (ldaxsp.o):
+    splash.o                  splash.s:397
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+ldaxi (ldaxi.o):
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+ldaxidx (ldaxi.o):
+    characters.o              characters.s:1343
+ldaxysp (ldaxsp.o):
+    fwrite.o                  common/fwrite.s:11
+    splash.o                  splash.s:397
+    name.o                    name.s:260
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+leaa0sp (leaaxsp.o):
+    name.o                    name.s:260
+mul8x16 (mul8.o):
+    mul.o                     runtime/mul.s:8
+mul8x16a (mul8.o):
+    mul.o                     runtime/mul.s:8
+mulax3 (mulax3.o):
+    name.o                    name.s:260
+negax (negabs.o):
+    shelp.o                   runtime/shelp.s:11
+    mod.o                     runtime/mod.s:11
+negeax (lneg.o):
+    ltoa.o                    common/ltoa.s:9
+plot (cputc.o):
+    gotoy.o                   cx16/gotoy.s:9
+    gotoxy.o                  cx16/gotoxy.s:9
+popa (popa.o):
+    gotoxy.o                  cx16/gotoxy.s:9
+popax (incsp2.o):
+    rwcommon.o                cbm/rwcommon.s:9
+    ltoa.o                    common/ltoa.s:9
+    _printf.o                 common/_printf.s:11
+    vcprintf.o                conio/vcprintf.s:8
+    strncpy.o                 common/strncpy.s:8
+    strcpy.o                  common/strcpy.s:8
+    shelp.o                   runtime/shelp.s:11
+popptr1 (popptr1.o):
+    rwcommon.o                cbm/rwcommon.s:9
+    mul.o                     runtime/mul.s:9
+    ltoa.o                    common/ltoa.s:9
+    vcprintf.o                conio/vcprintf.s:8
+    udiv.o                    runtime/udiv.s:9
+    strncpy.o                 common/strncpy.s:8
+    mul8.o                    runtime/mul8.s:9
+popsargsudiv16 (shelp.o):
+    mod.o                     runtime/mod.s:11
+ptr1 (zeropage.o):
+    write.o                   cbm/write.s:11
+    strlower.o                common/strlower.s:13
+    mul.o                     runtime/mul.s:10
+    ltoa.o                    common/ltoa.s:11
+    fwrite.o                  common/fwrite.s:14
+    _printf.o                 /Volumes/Zort/git/cc65/asminc/zeropage.inc:12
+    zerobss.o                 common/zerobss.s:9
+    vfprintf.o                common/vfprintf.s:11
+    vcprintf.o                conio/vcprintf.s:10
+    udiv.o                    runtime/udiv.s:10
+    strncpy.o                 common/strncpy.s:9
+    strcpy.o                  common/strcpy.s:9
+    staxspi.o                 runtime/staxspi.s:10
+    staspidx.o                runtime/staspidx.s:9
+    shelp.o                   runtime/shelp.s:12
+    pushw.o                   runtime/pushw.s:9
+    printf.o                  common/printf.s:9
+    popptr1.o                 runtime/popptr1.s:9
+    mulax3.o                  runtime/mulax3.s:9
+    mul8.o                    runtime/mul8.s:10
+    ldaxi.o                   runtime/ldaxi.s:8
+    cputs.o                   conio/cputs.s:10
+    cprintf.o                 conio/cprintf.s:9
+    _sys.o                    common/_sys.s:9
+    splash.o                  splash.s:11
+    name.o                    name.s:11
+    characters.o              characters.s:11
+ptr2 (zeropage.o):
+    rwcommon.o                cbm/rwcommon.s:10
+    write.o                   cbm/write.s:11
+    strlower.o                common/strlower.s:13
+    ltoa.o                    common/ltoa.s:11
+    _printf.o                 /Volumes/Zort/git/cc65/asminc/zeropage.inc:12
+    vcprintf.o                conio/vcprintf.s:10
+    strncpy.o                 common/strncpy.s:9
+    strcpy.o                  common/strcpy.s:9
+ptr3 (zeropage.o):
+    rwcommon.o                cbm/rwcommon.s:10
+    write.o                   cbm/write.s:11
+    ltoa.o                    common/ltoa.s:11
+    vcprintf.o                conio/vcprintf.s:10
+ptr4 (zeropage.o):
+    mul.o                     runtime/mul.s:10
+    udiv.o                    runtime/udiv.s:10
+    strlen.o                  common/strlen.s:12
+    shelp.o                   runtime/shelp.s:12
+    mul8.o                    runtime/mul8.s:10
+push0 (pushax.o):
+    name.o                    name.s:260
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+push1 (push1.o):
+    _printf.o                 common/_printf.s:11
+    vfprintf.o                common/vfprintf.s:9
+pusha (pusha.o):
+    splash.o                  splash.s:397
+    splash.o                  splash.s:397
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+pusha0 (pushax.o):
+    push1.o                   runtime/push1.s:8
+    fwrite.o                  common/fwrite.s:11
+    splash.o                  splash.s:397
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+pushax (pushax.o):
+    fwrite.o                  common/fwrite.s:11
+    callmain.o                runtime/callmain.s:11
+    _printf.o                 common/_printf.s:11
+    vcprintf.o                conio/vcprintf.s:8
+    pushw.o                   runtime/pushw.s:8
+    printf.o                  common/printf.s:8
+    cprintf.o                 conio/cprintf.s:8
+    splash.o                  splash.s:397
+    name.o                    name.s:260
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    graphics.o                graphics.s:38
+    main.o                    main.s:107
+pusheax (lpush.o):
+    _printf.o                 common/_printf.s:11
+pushw (pushw.o):
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+pushwysp (pushwsp.o):
+    fwrite.o                  common/fwrite.s:11
+    vfprintf.o                common/vfprintf.s:9
+    splash.o                  splash.s:397
+    name.o                    name.s:260
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+regbank (zeropage.o):
+    _printf.o                 /Volumes/Zort/git/cc65/asminc/zeropage.inc:14
+rwcommon (rwcommon.o):
+    write.o                   cbm/write.s:10
+shrax1 (shrax1.o):
+    splash.o                  splash.s:397
+sp (zeropage.o):
+    decsp4.o                  runtime/decsp4.s:8
+    lpush.o                   runtime/lpush.s:13
+    _printf.o                 /Volumes/Zort/git/cc65/asminc/zeropage.inc:11
+    vfprintf.o                common/vfprintf.s:11
+    vcprintf.o                conio/vcprintf.s:10
+    subysp.o                  runtime/subysp.s:9
+    subeqsp.o                 runtime/subeqsp.s:8
+    sub.o                     runtime/sub.s:9
+    staxspi.o                 runtime/staxspi.s:10
+    staxsp.o                  runtime/staxsp.s:8
+    staspidx.o                runtime/staspidx.s:9
+    pushwsp.o                 runtime/pushwsp.s:8
+    pushax.o                  runtime/pushax.s:8
+    pusha.o                   runtime/pusha.s:8
+    printf.o                  common/printf.s:9
+    popptr1.o                 runtime/popptr1.s:9
+    popa.o                    runtime/popa.s:8
+    leaaxsp.o                 runtime/leaaxsp.s:8
+    ldaxsp.o                  runtime/ldaxsp.s:8
+    incsp2.o                  runtime/incsp2.s:8
+    icmp.o                    runtime/icmp.s:9
+    decsp6.o                  runtime/decsp6.s:8
+    decsp3.o                  runtime/decsp3.s:8
+    decsp2.o                  runtime/decsp2.s:8
+    crt0.o                    /Volumes/Zort/git/cc65/asminc/zeropage.inc:11
+    cprintf.o                 conio/cprintf.s:9
+    addysp.o                  runtime/addysp.s:8
+    addeqsp.o                 runtime/addeqsp.s:8
+    add.o                     runtime/add.s:12
+    splash.o                  splash.s:10
+    name.o                    name.s:10
+    characters.o              characters.s:10
+    main.o                    main.s:10
+sreg (zeropage.o):
+    lneg.o                    runtime/lneg.s:11
+    ltoa.o                    common/ltoa.s:11
+    lpush.o                   runtime/lpush.s:13
+    axlong.o                  runtime/axlong.s:9
+    _printf.o                 /Volumes/Zort/git/cc65/asminc/zeropage.inc:11
+    udiv.o                    runtime/udiv.s:10
+    mod.o                     runtime/mod.s:12
+    icmp.o                    runtime/icmp.s:9
+    name.o                    name.s:10
+staspidx (staspidx.o):
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+stax0sp (staxsp.o):
+    splash.o                  splash.s:397
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+staxspidx (staxspi.o):
+    characters.o              characters.s:1343
+staxysp (staxsp.o):
+    name.o                    name.s:260
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    main.o                    main.s:107
+subeq0sp (subeqsp.o):
+    name.o                    name.s:260
+subeqysp (subeqsp.o):
+    characters.o              characters.s:1343
+subysp (subysp.o):
+    name.o                    name.s:260
+tmp1 (zeropage.o):
+    mul.o                     runtime/mul.s:10
+    ltoa.o                    common/ltoa.s:11
+    _printf.o                 /Volumes/Zort/git/cc65/asminc/zeropage.inc:13
+    vcprintf.o                conio/vcprintf.s:10
+    strncpy.o                 common/strncpy.s:9
+    staxspi.o                 runtime/staxspi.s:10
+    staspidx.o                runtime/staspidx.s:9
+    shrax1.o                  runtime/shrax1.s:8
+    shelp.o                   runtime/shelp.s:12
+    mod.o                     runtime/mod.s:12
+    incaxy.o                  runtime/incaxy.s:8
+    decaxy.o                  runtime/decaxy.s:8
+    color.o                   cx16/color.s:11
+    aslax1.o                  runtime/aslax1.s:8
+    characters.o              characters.s:11
+tmp2 (zeropage.o):
+    rwcommon.o                cbm/rwcommon.s:10
+    strncpy.o                 common/strncpy.s:9
+    shelp.o                   runtime/shelp.s:12
+tmp3 (zeropage.o):
+    strncpy.o                 common/strncpy.s:9
+tosaddax (add.o):
+    name.o                    name.s:260
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+tosicmp0 (icmp.o):
+    characters.o              characters.s:1343
+tosmoda0 (mod.o):
+    name.o                    name.s:260
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+tosmula0 (mul8.o):
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+    characters.o              characters.s:1343
+tossubax (sub.o):
+    splash.o                  splash.s:397
+tosudivax (udiv.o):
+    fwrite.o                  common/fwrite.s:12
+tosumula0 (mul8.o):
+    characters.o              characters.s:1343
+tosumulax (mul.o):
+    fwrite.o                  common/fwrite.s:12
+udiv16 (udiv.o):
+    shelp.o                   runtime/shelp.s:11
+zerobss (zerobss.o):
+    crt0.o                    cx16/crt0.s:9
+

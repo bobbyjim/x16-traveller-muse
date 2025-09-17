@@ -1,0 +1,69 @@
+2025 Sept 14
+
+these colors look good on black:
+--------------------------------
+1 white, 3 cyan, 5 green, 7 amber, 13-15 grays
+
+
+character structure (64 bytes)
+------------------------------
+   name:        16 chars
+   sophont:      1 char (H = Human)
+   status:       1 char (O=OK, W=wounded, S=seriousm C=comatose, D=dead)
+   career:       1 char (N=Navy)
+   terms:        1 char ('0'-'9')
+   upp:          6 char
+   skill level: 16 char
+   spare:       24 char
+}
+
+16 skills
+---------
+astrogator
+bureaucrat
+diplomat
+engineer
+fighter
+gunner
+hostile env
+medic
+pilot
+sensop
+steward
+streetwise
+survey
+survival
+trader
+vacc suit
+
+2D table of sophont types
+-------------------------
+llellewyloly
+droyne
+amindii
+threep
+vilani
+solomani
+vargr
+zhodani
+aslan
+bwap
+shrieker
+
+careers
+-------
+soldier / army
+agent
+scholar
+merchant
+spacer / navy
+rogue
+marine
+scout
+
+terms = 1 to 7
+- 2 skill receipts per term
+- each receipt is from 1 to 4 levels in a random skill.
+- salary is a flat Cr100 per skill level.
+
+(d)elete (i)nput (k)eep (r)ename?
